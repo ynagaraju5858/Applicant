@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>APSRTC Bus Pass Application</title>
+</head>
+<body>
+
+    <center>
+        <table width="800" bgcolor="#E6E6FF" cellpadding="20" style="border-radius: 20px;">
+            <tr>
+                <td align="center">
+                    <img src="ap.jpg" alt="APSRTC LOG" width="100" height="100"><br>
+                    <h2 style="color: blue; font-family: sans-serif;">ANDHRA PRADESH STATE ROAD TRANSPORT CORPORATION</h2>
+                    <h2 style="font-family: serif;">GENERAL BUS PASS APPLICATION</h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <br>
+
+    <center>
+        <form action="./submit.html">
+            <fieldset style="width: 800px; border-radius: 10px;">
+                <legend style="font-family: serif; font-size: 20px; color: blue; background-color: #E6E6FF;">Applicant Details</legend>
+            <table width="900" border="0" cellpadding="10" cellspacing="0">
+            
+                
+                <tr>
+                    <td><label for="name">Name <font color="red">*</font></label></td>
+                    <td>
+                        <input type="text" id="name" maxlength="20" name="Name" required><br>
+                        <small><font color="red">(Maximum characters: 20)</font></small>
+                    </td>
+                    <td><label for="father_name">Father's / Guardian's Name <font color="red">*</font></label></td>
+                    <td><input type="text" id="father_name" name="Father_name" required></td>
+                </tr>
+
+                <tr>
+                    <td>Date of birth <font color="red">*</font><br>
+                        <small><font color="blue">(dd/mm/yyyy)</font></small>
+                    </td>
+                    <td><input type="date"></td>
+                    <td>Gender <font color="red">*</font></td>
+                    <td>
+                        <input type="radio" name="gender"> Female
+                        <input type="radio" name="gender"> Male
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Age:</td>
+                    <td>
+                        <input type="text" size="2">
+                       
+                    </td>
+                    <td>Aadhaar No:</td>
+                    <td><input type="text" required></td>
+                </tr>
+
+                <tr>
+                    <td>WhatsApp No <font color="red">*</font></td>
+                    <td><input type="tel"></td>
+                    <td>E-mail Id <font color="red">*</font></td>
+                    <td><input type="email"></td>
+                </tr>
+
+                <tr>
+                    <td>Photo <font color="red">*</font></td>
+                    <td colspan="3">
+                        <input type="file">
+                    </td>
+                </tr>
+            </table>
+            </fieldset>
+            <br>
+       
+        <input type="submit" value="submit" >
+         </form>
+    </center>
+
+</body>
+</html>
